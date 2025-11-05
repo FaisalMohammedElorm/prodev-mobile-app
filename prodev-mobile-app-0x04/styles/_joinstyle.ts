@@ -5,11 +5,28 @@ const styles = StyleSheet.create({
     flex: 1,
     paddingHorizontal: 20
   },
+  // Navigation group styles
+  navGroup: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    marginTop: 22
+  },
   iconsection: {
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
     marginTop: 22
+  },
+  // Text styles
+  largeText: {
+    fontWeight: 700,
+    fontSize: 39,
+  },
+  smallText: {
+    fontWeight: 400,
+    fontSize: 12,
+    color: '#7E7B7B'
   },
   titleTextGroup: {
     marginTop: 20
@@ -26,6 +43,29 @@ const styles = StyleSheet.create({
   formGroup: {
     marginTop: 44,
     rowGap: 10
+  },
+  // Input field styles
+  placeholderText: {
+    fontSize: 18,
+    fontWeight: 400,
+    color: '#7B7B7B',
+    marginBottom: 7
+  },
+  inputField: {
+    borderWidth: 2,
+    height: 50,
+    borderRadius: 10,
+    borderColor: '#E9E9E9',
+    paddingHorizontal: 10
+  },
+  passwordGroup: {
+    borderWidth: 2,
+    height: 50,
+    borderRadius: 10,
+    borderColor: '#E9E9E9',
+    paddingHorizontal: 10,
+    flexDirection: 'row',
+    alignItems: 'center'
   },
   formLabel: {
     fontSize: 18,
@@ -60,12 +100,26 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     marginTop: 25
   },
+  // Add alias for button
+  button: {
+    backgroundColor: '#34967C',
+    height: 53,
+    borderRadius: 10,
+    justifyContent: 'center',
+    alignItems: 'center',
+    marginTop: 25
+  },
   buttonText: {
     color: 'white',
     fontSize: 17,
     fontWeight: 300
   },
   secondaryButtonGroup: {
+    rowGap: 15,
+    marginTop: 15,
+  },
+  // Add alias for socialMediaButtonGroup
+  socialMediaButtonGroup: {
     rowGap: 15,
     marginTop: 15,
   },
@@ -78,7 +132,22 @@ const styles = StyleSheet.create({
     columnGap: 10,
     borderWidth: 1,
   },
+  // Add alias for socialMediaButton
+  socialMediaButton: {
+    height: 53,
+    borderRadius: 10,
+    justifyContent: 'center',
+    alignItems: 'center',
+    flexDirection: 'row',
+    columnGap: 10,
+    borderWidth: 1,
+  },
   secondaryButtonText: {
+    fontSize: 18,
+    fontWeight: 400
+  },
+  // Add alias for socialMediaButtonText
+  socialMediaButtonText: {
     fontSize: 18,
     fontWeight: 400
   },
@@ -90,11 +159,27 @@ const styles = StyleSheet.create({
     right: 76,
     bottom: 33
   },
+  // Add alias for subTextGroup
+  subTextGroup: {
+    flexDirection: 'row',
+    justifyContent: 'center',
+    position: 'absolute',
+    left: 77, 
+    right: 76,
+    bottom: 33
+  },
   signupTitleText: {
     fontSize: 18,
     fontWeight: 400
   },
+  // Add alias for subText (already exists but will add another one for clarity)
   signupSubTitleText: {
+    fontSize: 18,
+    fontWeight: 600,
+    color: '#FFA800'
+  },
+  // Add alias for subTextJoin
+  subTextJoin: {
     fontSize: 18,
     fontWeight: 600,
     color: '#FFA800'
@@ -124,4 +209,4 @@ const styles = StyleSheet.create({
   }
 });
 
-export { styles }
+export { styles };
