@@ -53,7 +53,9 @@ export default function Index() {
               </View>
 
               <View style={{ alignItems: "center", paddingVertical: 20 }}>
-                <Text style={{ color: "white" }}>Continue to home</Text>
+                <TouchableOpacity onPress={() => router.push("/(home)")}>
+                  <Text style={{ color: "white" }}>Continue to home</Text>
+                </TouchableOpacity>
               </View>
             </View>
           </View>

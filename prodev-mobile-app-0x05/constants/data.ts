@@ -11,7 +11,8 @@ const SAMPLE_DATA : PropertyListingProps[] = [
       rate: 4.76,
       currency: "$",
       amount: 620,
-      favorite: false
+      favorite: false,
+      image: require("@/assets/images/mansion.jpg")
     },
     {
       propertyName: "Sunset Paradise Villa",
@@ -23,7 +24,8 @@ const SAMPLE_DATA : PropertyListingProps[] = [
       rate: 4.85,
       currency: "$",
       amount: 750,
-      favorite: true
+      favorite: true,
+      image: require("@/assets/images/Villa.jpg")
     },
     {
       propertyName: "Golden Sands Retreat",
@@ -35,7 +37,8 @@ const SAMPLE_DATA : PropertyListingProps[] = [
       rate: 4.92,
       currency: "$",
       amount: 900,
-      favorite: false
+      favorite: false,
+      image: require("@/assets/images/Beachfront.jpg")
     },
     {
       propertyName: "Azure Horizon Cottage",
@@ -47,7 +50,8 @@ const SAMPLE_DATA : PropertyListingProps[] = [
       rate: 4.78,
       currency: "$",
       amount: 680,
-      favorite: false
+      favorite: false,
+      image: require("@/assets/images/Countryside.jpg")
     },
     {
       propertyName: "Palm Haven Villa",
@@ -59,7 +63,8 @@ const SAMPLE_DATA : PropertyListingProps[] = [
       rate: 4.88,
       currency: "$",
       amount: 1200,
-      favorite: true
+      favorite: true,
+      image: require("@/assets/images/Tropical.jpg")
     },
     {
       propertyName: "Ocean Breeze Mansion",
@@ -71,7 +76,8 @@ const SAMPLE_DATA : PropertyListingProps[] = [
       rate: 4.95,
       currency: "$",
       amount: 2500,
-      favorite: false
+      favorite: false,
+      image: require("@/assets/images/mansion.jpg")
     },
     {
       propertyName: "Seaside Serenity House",
@@ -83,7 +89,8 @@ const SAMPLE_DATA : PropertyListingProps[] = [
       rate: 4.81,
       currency: "$",
       amount: 1500,
-      favorite: false
+      favorite: false,
+      image: require("@/assets/images/Secluded.jpg")
     },
     {
       propertyName: "Coral Reef Villa",
@@ -95,7 +102,8 @@ const SAMPLE_DATA : PropertyListingProps[] = [
       rate: 4.89,
       currency: "$",
       amount: 850,
-      favorite: false
+      favorite: false,
+      image: require("@/assets/images/Tropical.jpg")
     },
     {
       propertyName: "Tropical Bliss Retreat",
@@ -107,7 +115,8 @@ const SAMPLE_DATA : PropertyListingProps[] = [
       rate: 4.83,
       currency: "$",
       amount: 720,
-      favorite: false
+      favorite: false,
+      image: require("@/assets/images/Beachfront.jpg")
     },
     {
       propertyName: "Emerald Bay Cottage",
@@ -119,7 +128,8 @@ const SAMPLE_DATA : PropertyListingProps[] = [
       rate: 4.90,
       currency: "$",
       amount: 780,
-      favorite: true
+      favorite: true,
+      image: require("@/assets/images/Villa.jpg")
     }
   ];
 
@@ -137,4 +147,20 @@ const FILTERS: string [] = [
     "Pet-Friendly",
     "Secluded"
   ];
-  export { SAMPLE_DATA, FILTERS }
+
+// Image mapping for each filter
+const FILTER_IMAGES: { [key: string]: any } = {
+  "Mansion": require("@/assets/images/mansion.jpg"),
+  "CountrySide": require("@/assets/images/Countryside.jpg"),
+  "Villa": require("@/assets/images/Villa.jpg"),
+  "Tropical": require("@/assets/images/Tropical.jpg"),
+  "New": require("@/assets/images/Logo.png"),
+  "Amazing": require("@/assets/images/logo-green.png"),
+  "Beachfront": require("@/assets/images/Beachfront.jpg"),
+  "Luxury": require("@/assets/images/mansion.jpg"),
+  "Family-Friendly": require("@/assets/images/Family-Friendly.jpg"),
+  "Pet-Friendly": require("@/assets/images/Pet-Friendly.jpg"),
+  "Secluded": require("@/assets/images/Secluded.jpg")
+};
+
+export { SAMPLE_DATA, FILTERS, FILTER_IMAGES }

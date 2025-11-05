@@ -7,12 +7,11 @@ import {
   TextInput,
   Image,
   ScrollView,
-  Dimensions,
   TouchableHighlight,
 } from "react-native";
-import { FILTERS, SAMPLE_DATA } from "@/constants/data";
+import { FILTERS, SAMPLE_DATA, FILTER_IMAGES } from "@/constants/data";
 
-const Home = () => {
+const Search = () => {
   return (
     <View style={styles.container}>
       <View style={styles.searchGroup}>
@@ -38,14 +37,15 @@ const Home = () => {
       >
         <ScrollView horizontal showsHorizontalScrollIndicator={false}>
           <View style={styles.filterGroup}>
-            {FILTERS.map((filter, index) => (
+            {FILTERS.map((filter: string, index: number) => (
               <View style={styles.filterContainer} key={index}>
                 <Image
                   style={{
-                    flex: 1,
+                    width: 40,
+                    height: 40,
                   }}
-                  source={require("@/assets/images/mansion.png")}
-                  resizeMode="contain"
+                  source={FILTER_IMAGES[filter] || require("@/assets/images/mansion.jpg")}
+                  resizeMode="cover"
                 />
                 <Text>{filter}</Text>
               </View>
@@ -66,4 +66,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Search;

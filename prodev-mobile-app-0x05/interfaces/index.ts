@@ -5,7 +5,7 @@ export interface PropertyListingProps {
     amount: number,
     location: PropertyLocationProps,
     favorite: boolean,
-    image?: string
+    image?: any
 }
 
 export interface PropertyLocationProps {

@@ -3,7 +3,7 @@ import EvilIcons from "@expo/vector-icons/EvilIcons";
 import MaterialIcons from "@expo/vector-icons/MaterialIcons";
 import { PropertyListingProps } from "@/interfaces";
 import FontAwesome from "@expo/vector-icons/FontAwesome";
-import { styles } from "@/styles/_propertyCardStyle";
+import { styles } from "@/styles/propertyCardStyle";
 
 const PropertyListingCard: React.FC<PropertyListingProps> = ({
   propertyName,
@@ -12,10 +12,11 @@ const PropertyListingCard: React.FC<PropertyListingProps> = ({
   amount,
   location,
   favorite,
+  image,
 }) => {
   return (
     <ImageBackground
-      source={require("@/assets/images/sample-image.png")}
+      source={image || require("@/assets/images/mansion.jpg")}
       style={styles.container}
     >
       <View style={styles.overlay}>
